@@ -49,9 +49,13 @@ const Container = styled.div`
 
 const JobHeading = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 8px;
+
+  @media (min-width: 758px) {
+    flex-direction: row;
+  }
 `;
 
 const JobTitle = styled.div`
@@ -63,9 +67,13 @@ const EnhancedJobTitle = styled.span`
   font-weight: bold;
 `;
 
-const JobDuration = styled.span`
+const JobDuration = styled.div`
   font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
+
+  @media (min-width: 768px) {
+    margin-top: 30px;
+  }
 `;
 
 const JobDescription = styled.p`
