@@ -7,3 +7,8 @@ But I failed with the paper part of it, I really like colors in everything I bui
 # Tech things
 
 I will do some testing to make sure everything is running okay at the pipeline.
+
+## Some tech debt I will solve later
+
+- Content on `content.ts` file.
+- Better organizing my components and sections
