@@ -70,10 +70,6 @@ const EnhancedJobTitle = styled.span`
 const JobDuration = styled.div`
   font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
-
-  @media (min-width: 768px) {
-    margin-top: 30px;
-  }
 `;
 
 const JobDescription = styled.p`
