@@ -8,4 +8,4 @@ I am feeling I will fail the paper-like part of it by applying some colors, but 
 
 # Tech things
 
-There is no tech things. It's just HTML, CSS and content, as everything should.
+There are no tech things. It's just HTML, CSS and content, as everything should.
