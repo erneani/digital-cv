@@ -1,14 +1,11 @@
 # Ernani Digital CV
 
-I like digital things. I also like the idea of paper-like things on internet. So I created this digital CV to show the same information I have on my CV but in the internet.
+I don't really like digital things anymore, but the idea of a nice digital CV didn't gone away from my mind.
 
-But I failed with the paper part of it, I really like colors in everything I build and this one couldn't be different.
+That said, I will improve the current CV applying some really important information on it. Nothing confidential, though.
+
+I am feeling I will fail the paper-like part of it by applying some colors, but I don't really think people will often get worried about it.
 
 # Tech things
 
-I will do some testing to make sure everything is running okay at the pipeline.
-
-## Some tech debt I will solve later
-
-- Content on `content.ts` file.
-- Better organizing my components and sections
+There is no tech things. It's just HTML, CSS and content, as everything should.
