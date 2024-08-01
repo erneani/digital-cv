@@ -1,5 +1,6 @@
 :root {
-    --max-readable-width: 900px
+    --max-readable-width: 900px;
+    --readable-padding: 48px 8px;
 }
 
 .centralized {
@@ -8,4 +9,8 @@
 
 .reading-width {
     max-width: var(--max-readable-width);
+}
+
+.reading-padding {
+    padding: var(--readable-padding);
 }
