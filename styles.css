@@ -1,0 +1,11 @@
+:root {
+    --max-readable-width: 900px
+}
+
+.centralized {
+    margin: auto;
+}
+
+.reading-width {
+    max-width: var(--max-readable-width);
+}
