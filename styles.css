@@ -3,6 +3,12 @@
     --readable-padding: 48px 8px;
 }
 
+body {
+    color-scheme: light dark;
+    background-color: Canvas;
+    color: CanvasText;
+}
+
 .centralized {
     margin: auto;
 }
