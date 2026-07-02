@@ -49,7 +49,7 @@ Light/dark toggle in the header.
 
 ### 3.3 PDF Export
 
-"Download PDF" button in the header using `react-to-print`.
+"Download PDF" button in the header using `react-to-print`. Clicking it triggers the browser's native print dialog — the user selects "Save as PDF" there. There is no silent direct-download; this is the expected behavior of `react-to-print` and is acceptable given the library choice.
 
 - Prints the `<CV>` component (everything below the header) via a ref
 - `print.css` scoped under `@media print`:
