@@ -13,7 +13,12 @@ export default function ProjectsSection({ entries, title = 'Projects' }: Project
         <div key={i} className="mb-4 print:break-inside-avoid">
           <span className="text-[0.95rem] font-bold text-[var(--cv-ink)]">
             {entry.url ? (
-              <a href={entry.url} target="_blank" rel="noreferrer" className="underline">
+              <a
+                href={/^https?:\/\//.test(entry.url ?? '') ? entry.url : `https://${entry.url}`}
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+              >
                 {entry.name}
               </a>
             ) : (
