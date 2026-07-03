@@ -1,3 +1,11 @@
+import CV from './components/CV'
+import { getContent } from './content'
+
 export default function App() {
-  return <main style={{ padding: '2rem', fontFamily: 'monospace' }}>CV loads here</main>
+  const data = getContent('en')
+  return (
+    <div style={{ backgroundColor: 'var(--cv-bg)', minHeight: '100vh' }}>
+      <CV data={data} />
+    </div>
+  )
 }
