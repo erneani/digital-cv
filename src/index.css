@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --font-mono: "Courier Prime", "Courier New", monospace;
+}
+
+:root {
+  --cv-bg: #F8F6F1;
+  --cv-ink: #1C1B19;
+  --cv-ink-muted: #5C5A55;
+  --cv-rule: #C8C5BE;
+}
+
+[data-theme="dark"] {
+  --cv-bg: #1C1B19;
+  --cv-ink: #DEDBD2;
+  --cv-ink-muted: #8A8780;
+  --cv-rule: #3A3835;
+}
+
+body {
+  font-family: "Courier Prime", "Courier New", monospace;
+  background-color: var(--cv-bg);
+  color: var(--cv-ink);
+}
