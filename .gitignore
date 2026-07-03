@@ -1,3 +1,6 @@
+# Superpowers directory (agent scaffolding — not for version control)
+.superpowers/
+
 # Logs
 logs
 *.log
