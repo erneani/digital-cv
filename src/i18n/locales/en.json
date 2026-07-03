@@ -1,0 +1,20 @@
+{
+  "header": {
+    "download": "Download PDF",
+    "theme_light": "Light",
+    "theme_dark": "Dark",
+    "lang_en": "English",
+    "lang_pt": "Português",
+    "lang_es": "Español"
+  },
+  "sections": {
+    "experience": "Experience",
+    "education": "Education",
+    "languages": "Languages",
+    "interests": "Interests",
+    "community": "Community",
+    "projects": "Projects",
+    "competencies": "Competencies",
+    "technologies": "Technologies"
+  }
+}

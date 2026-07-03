@@ -1,4 +1,5 @@
 import { forwardRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import type { CVData } from '../types/cv'
 import ProfileSection from './sections/ProfileSection'
 import ExperienceSection from './sections/ExperienceSection'
@@ -13,6 +14,8 @@ interface CVProps {
 }
 
 const CV = forwardRef<HTMLElement, CVProps>(function CV({ data }, ref) {
+  const { t } = useTranslation()
+
   return (
     <main ref={ref} className="max-w-[680px] mx-auto px-6 py-12">
       <ProfileSection
@@ -23,16 +26,20 @@ const CV = forwardRef<HTMLElement, CVProps>(function CV({ data }, ref) {
       />
       <ExperienceSection
         entries={data.experience}
-        title="Experience"
-        competenciesLabel="Competencies"
-        technologiesLabel="Technologies"
+        title={t('sections.experience')}
+        competenciesLabel={t('sections.competencies')}
+        technologiesLabel={t('sections.technologies')}
       />
-      <EducationSection entries={data.education} title="Education" />
-      <LanguagesSection entries={data.languages} title="Languages" />
-      {data.interests.length > 0 && <InterestsSection items={data.interests} title="Interests" />}
-      {data.community.length > 0 && <CommunitySection items={data.community} title="Community" />}
+      <EducationSection entries={data.education} title={t('sections.education')} />
+      <LanguagesSection entries={data.languages} title={t('sections.languages')} />
+      {data.interests.length > 0 && (
+        <InterestsSection items={data.interests} title={t('sections.interests')} />
+      )}
+      {data.community.length > 0 && (
+        <CommunitySection items={data.community} title={t('sections.community')} />
+      )}
       {data.projects && data.projects.length > 0 && (
-        <ProjectsSection entries={data.projects} title="Projects" />
+        <ProjectsSection entries={data.projects} title={t('sections.projects')} />
       )}
     </main>
   )
